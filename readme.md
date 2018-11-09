@@ -1,4 +1,4 @@
-# Tools for PageSpeed Insight
+# Tools for PageSpeed Insights
 
 ## Get score
 
@@ -24,8 +24,16 @@ $ chmod +x linux-install-1.9.0.397.sh
 $ sudo ./linux-install-1.9.0.397.sh
 ```
 
-### 2.Compile
+### 2.Install Node modules
+```
+$ npm install
+```
+
+### 3.Compile
 ```
 $ clj -m cljs.main --target node --output-to app.js -c pagespeed.core
 ```
 
+## Setting
+
+Edit "config / default.yaml" and set the API key for PageSpeed ​​Insights.
